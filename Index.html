@@ -1,0 +1,1292 @@
+<!--khalid abou jaafer cod es-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+	<style>
+	body {
+	font-family: arial;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width:100%;
+}
+.intro{margin-top: 100%;
+	width: 95%;
+	padding: 10px;
+	animation: distroy 0.5s 1 forwards 5s;
+font-size: 16px;
+
+}
+
+#t{display: none;
+	margin-left:5px;
+}
+
+button:hover{
+	box-shadow: 3px 3px 3px violet;
+}
+
+button{
+	user-select:none
+}
+.edit-page{background-color: white;
+height: 100%;
+width: 100%;
+position: fixed;
+
+	
+}
+
+.im{border:5px solid black;
+	background-color: transparent;
+	width: 97%;
+	height: 45%;
+	position: fixed;
+	top:0;
+	
+	
+	
+}
+.image{
+	   position: absolute;
+	   margin-top: 0.5px;
+	   margin-left:0.5px;
+	   width: 100%;
+	   
+	  
+	   
+}
+.hardware{
+	position: fixed;
+	height:320px;
+	width: 100%;
+	overflow: auto;
+	margin-top: 46vh;
+	background-color: #ddd;
+	border-top:5px solid #ff6f62;
+	padding:1px;
+	user-select:none;
+	filter: none;
+	animation:none;
+	
+}
+
+@keyframes anim{
+25%{filter: hie-rotate(90deg)}
+50%{
+	filter: hue-rotate(180deg);
+	
+}
+	60%{filter:contrast(100%)}
+	70%{ text-shadow: 1px 1px 5px aqua }
+	80%{background-image: linear-gradient(5deg, aqua, blue)}
+90%{filter: hur-rotate(200deg)}
+	100%{background-image: linear-gradient(100deg, green, orange)}
+}
+
+.edit{
+	  text-align: center;
+	  margin-top: 25px;
+	 
+}
+
+
+
+ input[type="range"]{
+   -webkit-appearance:none !important;
+height: 15px;
+width: 200px;
+border:0.5px solid black;
+box-shadow: 0px 2px 5px black, 
+			0px -2px 5px black;
+}
+input:hover{
+background-image: linear-gradient(90deg, skyblue, #f11 );
+user-select:none;
+
+ }
+
+ input[type="range"]::-webkit-slider-thumb{
+   -webkit-appearance:none !important;  
+width: 15px;
+height: 25px;
+background-color: purple;
+box-shadow: 2px 2px 1px ;
+
+
+
+ }
+ 
+
+
+.settings, .help{
+	
+	background-color: transparent;
+	float:left;
+	height: 25px;
+	color: aqua;
+	font-size: 16px;
+	border:none;
+}
+
+.help{filter: blur(0px)}
+
+#content{
+	position: absolute;
+	background-color: rgba(50, 50, 100, 0.98);
+	z-index: 5;
+	top: 0;
+	left: 0;
+	height: 0%;
+	height: 0px;
+	overflow: hidden;
+	padding: 0px;
+	color: white;
+}
+
+#inpt{
+	
+}
+
+#inputt{display: none;
+	position:absolute;
+	background-color: rgba(50, 100, 200, 0.95);
+width: 95%;
+height: 100vh;
+padding: 10px;
+top: 0;
+
+}
+#inpt{background-color: white;
+border-radius:0;
+font-size: 14px;
+border: 1px solid aqua;
+   
+}
+#inpt:hover{background-image: none!important}
+.x{
+	float:right;
+	color: aqua;
+	margin-right: 10px;
+	
+}
+
+.done{
+	float: right;
+	background-color: green;
+color:white;
+font-family: helvetica;
+font-size: 16px;
+padding: 5px;
+
+	
+}
+
+nav{
+	background-color: black;
+	height: 30px;
+	width: 97%;
+	padding: 5px;
+	color: white;
+	font-size: 15px;
+	
+}
+
+.upload{
+	background-color:none;
+	height: 25px;
+	padding: 5px 25px;
+	border:none;
+	color: #fff;
+font-size: 16px;
+}
+.paste{
+	background-color: white;
+	color:blue;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 3px;
+	height: 30px;
+	position: absolute;
+	box-shadow: 5px 5px 3px black;
+	border:none;
+	border-radius: 1px 5px 5px 1px;
+	margin-left: -1px;
+}
+.paste-image{
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	margin-left: 30px;
+}
+/* Settings button */
+
+
+/* SETTINGS
+*/
+.changec{
+	background-color: #20B2AA;
+	height: 100%;
+	width: 97%;
+	padding: 5px;
+	display: none;
+	position: absolute;
+	top:0;
+	
+}
+.changec button{
+	background-color: orange;
+	width: 250px;
+	font-size: 16px;
+	color: White;
+	height: 40px;
+	padding: 5px 10px;
+   
+	
+}
+.invColors{
+	
+}
+.animatedColors{
+	
+}
+.ch{
+	background-color: black;
+	font-size: 15px;
+	color: aqua;
+	border:none;
+	padding: 0;
+	
+}
+
+
+.blackC{
+	background-color: black;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	
+	
+}
+
+.blueC{
+	background-color: white;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-left: 60px;
+	
+	
+}
+
+
+.redC{
+	background-color: red;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-left: 120px;
+	
+	
+}
+
+
+.greenC{
+	background-color: green;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-left: 180px;
+	
+	
+}
+
+
+.yellowC{
+	background-color: yellow;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-top:20px;
+	
+	
+}
+
+.purpleC{
+	background-color: purple;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 20px;
+	
+	
+}
+
+
+.grayC{
+	background-color: gray;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 20px;
+	
+	
+	
+}
+
+
+.pinkC{
+	background-color: pink;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	margin-left: 180px;
+	margin-top: 20px;
+	
+	
+}
+
+
+
+.color-options{position:absolute;
+display: flex;
+margin-left:10%}
+
+
+/* width and height */
+
+#wi-heC{
+	display: none;
+	height: 250px;
+	width: 96%;
+	background-color: rgba(55, 66, 77, 0.5);
+position: relative;
+	
+	top:0;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.iRotate{
+	transform: rotateZ(-90deg);
+	margin-left: -190px;
+	position: absolute;
+	margin-top: 100px;
+	
+	
+}
+#iWidth{
+	position: absolute;
+	margin-left: -100px;
+	margin-top: 200px;
+	
+}
+#backgroundc{
+	display: none;
+}
+
+#bc{
+	display: none;
+}
+
+
+
+/* Border radius */
+.rect{
+	   height: 25px;
+	width: 25px;
+	background-color: green;
+	display: inline-block
+}
+
+#borderR{}
+
+.circle{
+	
+	height: 25px;
+	width: 25px;
+	background-color: green;
+	border-radius:50%;
+	display: inline-block;
+}
+
+/* part of stage 2 is on top, this is the whole container + other
+
+
+*/
+
+.stage1 /* Button */{
+	border-bottom:none;
+  
+}
+
+
+.stage2{background-color: #FAEBD7;
+display: none;
+	position: absolute;
+	top: 0;
+	padding: 5px;
+	width: 97%;
+	height: 175vh;
+}
+
+.stage2 button{
+	background-color: white;
+	width: 200px;
+	height: 30px;
+	font-size: 16px;
+	padding: 3px;
+	border:none;
+	border-top: 1px solid blue;
+	border-bottom: 1px solid blue;
+	margin-top: 5px;
+}
+
+.Sbtn{
+	background-color: green;
+	font-size:16px;
+}
+
+
+._stage2btn {
+	float: right;
+	width: 100px !important;
+	height: 30px;
+	background-color: #eee;
+	padding: 3px;
+	
+   }
+   .stages{
+	   display: flex;
+	   margin: auto;
+	   
+   }
+   
+  .stages button{
+	  width: 158px;
+	  background-color: white;
+	  height: 30px;
+	  font-size: 15px;
+	  color: #132231;
+	 
+ 
+  }
+  
+ .stages button:hover{
+	 border-bottom:none;
+	 box-shadow: 1px 1px 1px lime;
+ }
+ .Credits{
+	 width: 90%;
+	 padding: 14px;
+	 color: #111;
+	 margin: auto;
+	 height: 25px;
+	 overflow: hidden;
+ }
+ 
+.Credits h3{text-align: center;
+	color: #aaa;
+	cursor: pointer;
+}
+
+
+
+
+/* My loader */
+
+.fixed{
+	position: fixed;
+	top:0;
+	background-color: white;
+	height: 100vh;
+	width: 100%;
+	animation: distroy 0.5s 1 forwards 5s;
+}
+ @keyframes distroy {100%{
+	 height: 0px;
+	 width: 0px;
+	 padding: 0;
+	 margin: 0;
+	 background-color: transparent;
+	 overflow: hidden;
+	 box-shadow: none;
+	 text-shadow: none;
+	 border:none;
+	 color: transparent;
+	 
+ }}
+
+
+.allc{
+   margin-top: 30%;
+   margin-left: 20%;
+   width: 200px;
+   height: 200px;
+   background-color: #efefef;
+   position: absolute;
+   border-radius:10px;
+   animation: distroy 0.5s 1 forwards 5s;
+}
+
+.col1{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-top: 5px solid black;
+	margin-left: 75px;
+	margin-top: 75px;
+	border-radius:50%;
+	border-right:5px solid transparent;
+animation: main 1.75s 5 forwards, distroy 0.5s forwards 5s;
+animation-timing-function: linear;
+
+}
+@keyframes main {
+		  100% {transform: rotate(360deg)}
+	}
+
+.col2{
+   font-family:helvetica;
+   font-size: 25px;
+   margin-top: 0.1px;
+   width: 105px
+   ;padding: 3px;
+   margin-left: 40px;
+   overflow: hidden;
+  animation: wid 1.75s 5 forwards linear, distroy 0.5s 1 forwards 5s;
+  letter-spacing: 3px;
+}
+
+@keyframes wid {
+		50% {width:135px}
+	
+}
+
+	</style>
+	
+	<div class="edit-page">
+	<div class = "im" id="imbc">
+	<img src = "https://yt3.ggpht.com/a/AGF-l783rQkzJER5X6WT9XsAkOFNdHg3tHcGmzxpeA=s900-mo-c-c0xffffffff-rj-k-no" width="200" height="200" class="image" id="zimg">
+</div>
+
+<div class="hardware" id="mother">
+<nav>
+<button class="settings" id="sett" style="transform:rotate(0deg)">🔄</button>
+<button class="help" id="hl">مساعدة</button>
+
+<button id="uploadnew" onclick="upld()" class="upload">إضافة صورة</button>
+
+<button id="change" class="ch">الإعدادات</button>
+</nav>
+<div class="stages">
+<button class="stage1">الوضوح</button>
+<button id="stage2btn" class="Sbtn">الحجم والخلفية</button>
+</div>
+
+<p id="t"></p>
+
+<div id="inputt">
+<button class="done" id="done">حفظ </button>
+<br>
+<span class="paste-image">لصق صورة </span>
+<input type = "text" id = "inpt" placeholder="Paste image here"><button id="go" class="paste"> لصق </button>
+<br>
+<p style="margin-left:30px; font-size:17px; color: lime; letter-spacing:4px; ">اختر صورة</p>
+
+
+<img src = "https://yt3.ggpht.com/a/AGF-l783rQkzJER5X6WT9XsAkOFNdHg3tHcGmzxpeA=s900-mo-c-c0xffffffff-rj-k-no" width="50" height="50"  id="choose-original">
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/BIMCBJJXNJ.jpg" height="40" width="50" id="choose1" alt="no">   
+
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/K8NTTCGBZU.jpg" height="40" width="50" id="choose2" alt="no">  
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/83HHQUJKRT.jpg" height="40" width="50" id="choose3" alt="no">  
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/QBGU3ISCKI.jpg" height="40" width="50" id="choose4" alt="no">  
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/LTCIWAW9R2.jpg" height="40" width="50" id="choose5" alt="no">  
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/D6Q4TWDY4V.jpg" height="40" width="50" id="choose6" alt="no">   
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/0BJXEHZBXK.jpg" height="40" width="50" id="choose7" alt="no">   
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/BO3XRRFRRQ.jpg" height="40" width="50" id="choose8" alt="no">  
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/Q63RKSPEYT.jpg" height="40" width="50" id="choose9" alt="no">  
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/693PZB7YZT.jpg" height="40" width="50" id="choose10" alt="no"> 
+
+<img src="https://cdn.stocksnap.io/img-thumbs/280h/8SM5T92EN3.jpg" height="40" width="50" id="choose11" alt="no">  
+
+<img src="https://cdn.stocksnap.io/img-thumbs/960w/Q0NU32178V.jpg" height="40" width="50" id="choose12" alt="no">   
+
+<img src="https://www.sololearn.com/Icons/Avatars/12830593.jpg" height="40" width="50" id="choose-last" alt="no"/>   
+
+<br>Some pictures might not be at its proper Width.
+</div>
+
+
+
+<div class="edit">
+<h3> Edit </h3>
+
+
+brightness
+<br>
+<input type="range" id = "brightness" value = "100" max = "200" min = "0"/>
+<span id="bright"></span>
+<br>
+Saturate
+<br>
+<input type="range" id = "saturate" value = "100" max = "200" min = "0"/>
+<span id="satur"></span>
+<br>
+grayscale
+<br>
+<input type="range" id = "gscale" value = "0" max = "100" min = "0"/>
+<span id="text"></span>
+<br>
+Hue-rotate
+<br>
+<input type="range" id = "hue-rotate" value = "0" max = "360" min = "0"/>
+<span id="hue"></span>
+<br>
+Invert
+<br>
+<input type="range" id = "invert" value = "0" max = "100" min = "0"/>
+<span id="inv"></span>
+<br>
+Contrast
+<br>
+<input type="range" id = "contrast" value = "100" max = "200" min = "0"/>
+<span id="con"></span>
+<br>
+Sepia
+<br>
+<input type="range" id = "sepia" value = "0" max = "100" min = "0"/>
+<span id="sp"></span>
+<br>
+Opacity
+<br>
+<input type="range" id = "opacity" value = "100" max = "100" min = "0"/>
+<span id="op"></span>
+<br>
+Blur
+<br>
+<input type="range" id = "blur" value = "0" max = "100" min = "0"/>
+<span id="bl"></span>
+<br>
+
+		<div id="content">
+		<span onclick="close()" id="closec" class="x">تراجع</span>
+	<h3> Need help? (Q&A) </h3>
+	
+	<p class="Q"> 
+ تحتاج مساعدة؟ (سؤال وجواب)
+
+- س: لم تظهر الصورة بعد لصق الصورة
+
+بعد لصق الصورة ، يجب عليك النقر فوق "تحميل". إذا لم تظهر الصورة بعد النقر فوق "تحميل" ، فمن المحتمل أنك لم تقم بلصق عنوان URL الصحيح. يجب عليك لصق الصورة - وليس رابط (رابط) الصورة.
+
+- س: تختفي الصورة الأصلية.
+
+- ج: إذا كان السبب في ذلك هو أنك تحاول لصق صورة ، فذلك لأنك لم تقم بلصق الشيء الصحيح. أو يمكن أن يكون ذلك لأنك فقط كتبت شيئًا عن طريق الخطأ. لحل المشكلة ال ، فقط أعد تشغيل الكود.
+
+س: زر "المرحلة 1" لا يعمل
+
+ج: إنه يعمل. المرحلة 1 هي التأثيرات تحت رأس التحرير. نظرًا لأن محتوى المرحلة 1 معروض بالفعل ، فإنه لا يغير أي شي</p>
+
+
+	</div>
+	
+	<!-- This is the settings
+	-->
+	<div class="changec" id="Set">
+	<button id="setClose">تراجع</button>
+	<h2>الإعدادات</h2>
+	تحرير
+	<br>
+	<button id="invC" class="invColors">Color Board</button> 
+<br>
+<button id="animC" class="animatedColors">Animated Board (colors)</button>
+<br>
+<button id="displayTime" class="display-time"> Display time </button>
+</div>
+
+<div id="stage-2" class="stage2">
+<button id= "stage2close" class="_stage2btn"> حفظ </button><br>
+<h4> Stage 2 </h4>
+<h2>Edit</h2>
+يرجى الاستمرار على الشاشة أثناء تحرير الطول والعرض<br>
+<button id="wi-he" class="width_height">الطول | العرض•</button>
+
+<!--Width and heightsettings -->
+
+<div id="wi-heC">
+
+<input type= "range" id="iHeight" class="iRotate" max = "100" min="1" value="100"> 
+<br>
+<input type = "range" id="iWidth" max="100" min = "1" value ="65"/>
+
+<!-- wi / he end -->
+</div>
+
+
+<button class="backCol" id="mybackCol">لون الخلفية</button>
+
+<div id="backgroundc">
+أختر لون الخلفية<br>			
+<input type ="color" id="bgc" placeholder="Example: #ffffff">
+
+</div>
+<br>
+<button class="borderR" id="bR"> الإطار</button>
+
+<!-- border settings -->
+
+<div id="bc" class="bordersettings">
+Border Radius
+<br>
+<span class="rect"> </span><input type="range" min = "0" max="100" value="0" id="borderR"/>
+<span class="circle" id="cir"></span>
+<br>
+Border Width<br>
+<input type = "number" id="borderW" placeholder="ex: 5">
+<br>
+لون  الحواف
+
+<input type = "color" id="borderColor" placeholder="Example: #000000">
+<br>
+<div class="color-options">
+<span id = "black" class="blackC">b</span>
+<br>
+<span id="white" class="whiteC"></span>
+<span id="blue" class="blueC"></span>
+<span id="red" class="redC"></span>
+<span id="green" class="greenC"></span>
+<br>
+<br>
+<span id="yellow" class="yellowC"></span>
+
+<span id="purple" class="purpleC"></span>
+<span id="gray" class="grayC"></span>
+<span id="pink" class="pinkC"> </span>
+</div>
+</div>
+
+
+
+
+
+	<!-- The stage 2 close -->
+	</div>
+	
+	</div>
+	<br>
+	<br>
+	<div class="Credits" id="credits">
+	<h3 id="showCredits"> Credits </h3>
+	Thanks to:
+	<ul> <li> Calvin </li>
+		  Making transitions replayable
+		 <li> Taste </li>
+		 Fixing the range input (filters) work the way they're supposed too.
+	</ul>
+	for helping me make this code! <br>
+	Its possible that i didn't mention some people - that should be on here. if it's you, please let me know so i can add you on here too.'
+	</div>
+	<br>
+	<br>
+	<br>
+
+	</div>
+	</div>
+	
+	<div class="fixed">
+	<div class="allc">
+	  <div class="col1"> </div>
+<div class="col2">...إنتظار </div>
+	</div>
+	<p class="intro"> ❗️رجاءا انتظر بعض الثواني للفتح التطبيق</p>
+	</div>
+	
+	<script type="text/javascript">
+	
+function time(){
+	var d = new Date();
+	
+	var x = d.toLocaleTimeString();
+	document.getElementById("t").innerHTML = x;}
+
+setInterval(time);
+window.onload = () =>{
+// display block
+
+var clock = document.getElementById('t');
+var dTbtn = document.getElementById('displayTime');
+
+dTbtn.onclick = function(){
+	if(clock.style.display=="block") {clock.style.display="none"} else{clock.style.display="block"};
+
+if (clock.style.display=="block") {dTbtn.style.color="#00ff7f"};
+
+if (clock.style.display=="none") {dTbtn.style.color=""}
+};
+
+var bcV = document.getElementById('bgc');
+var nonm = document.getElementById('imbc');
+
+var chooseo = document.getElementById('choose-original');
+
+var choose =[document.getElementById('choose1'), document.getElementById('choose2'),   document.getElementById('choose3'), document.getElementById('choose4'), document.getElementById('choose5'), document.getElementById('choose6'), document.getElementById('choose7'), document.getElementById('choose8'), document.getElementById('choose9'), document.getElementById('choose10'), document.getElementById('choose11'), document.getElementById('choose12')];
+
+
+
+var invCbtn = document.getElementById('invC');
+
+var board = document.getElementById('mother');
+
+invCbtn.addEventListener('click', function(){
+	
+	if (board.style.filter=="invert(100%)") {board.style.filter="none"} else{board.style.filter="invert(100%)"}
+
+if (board.style.filter=="invert(100%)") {invCbtn.style.color="#00ff7f"};
+if (board.style.filter=="none") {invCbtn.style.color=""}
+
+});
+
+
+var anC = document.getElementById('animC');
+anC.addEventListener("click", function(){
+	if(board.style.animation=="anim 10s infinite") {board.style.animation="none"} else{board.style.animation="anim 10s infinite"}
+if (board.style.animation=="anim 10s infinite") {anC.style.color="#00ff7f"}
+
+if (board.style.animation=="none") {anC.style.color=""}
+});
+
+//CREDITS
+
+var credc = document.getElementById('credits');
+var credbtn = document.getElementById('showCredits');
+
+credbtn.onclick = function(){
+	credc.style.height="100vh";
+credc.style.backgroundColor="white";
+};
+
+//SETTINGS
+// somethigs got changed after, so this the actual settings close.
+
+var sClose = document.getElementById('setClose');
+// Stage 2
+
+var STbtn = document.getElementById('stage2btn');
+var stagetc = document.getElementById("stage-2");
+
+var STclose = document.getElementById('stage2close');
+
+//For displaying and not displaying
+var setbtn = document.getElementById('change');
+var settings = document.getElementById('Set');
+
+//width and height
+var sizebtn = document.getElementById('wi-he');
+var sizec = document.getElementById('wi-heC');
+
+//background 
+var mybcbtn = document.getElementById('mybackCol');
+var bcgc = document.getElementById('backgroundc');
+// HEIGHT AND WIDTH
+var heightA = document.getElementById('iHeight');
+var widthA = document.getElementById('iWidth');
+
+//Border
+var bRbtn = document.getElementById('bR');
+var borderCon = document.getElementById('bc');
+
+// border width
+var bW = document.getElementById('borderW');
+// border Color
+var bColor = document.getElementById('borderColor');
+// border default colors:
+
+var bblack = document.getElementById('black');
+
+var bwhite = document.getElementById('white');
+
+
+var bred = document.getElementById('red');
+
+
+var bgreen = document.getElementById('green');
+
+
+var byellow = document.getElementById('yellow');
+
+
+var bpurple = document.getElementById('purple');
+
+var bgray = document.getElementById('gray');
+
+var bpink = document.getElementById('pink');
+//settings  END
+
+var choosel = document.getElementById('choose-last');
+//
+var dn = document.getElementById('done');
+var gov = document.getElementById('go');
+var inpv = document.getElementById('inpt');
+var pic = document.getElementById('inputt');
+var hllp = document.getElementById('hl');
+var img = document.getElementById('zimg');
+var stng = document.getElementById('sett');
+var cnt = document.getElementById('content');
+//brightness
+var brtxt = document.getElementById('bright');
+var brt = document.getElementById('brightness');
+var str = document.getElementById('saturate');
+var strtxt = document.getElementById('satur');
+//grayscale
+var txt =
+document.getElementById("text");
+var gs = document.getElementById('gscale');
+
+// Hue-rotate
+var huetxt = document.getElementById('hue');
+var hrt = document.getElementById('hue-rotate');
+
+//invert
+var invtxt = document.getElementById('inv');
+var inv = document.getElementById('invert');
+
+//Contrast
+var contxt = document.getElementById('con');
+var con = document.getElementById('contrast');
+
+//Sepia
+var sptxt = document.getElementById('sp');
+var sp = document.getElementById('sepia');
+
+//Opacity
+var optxt = document.getElementById('op');
+var op = document.getElementById('opacity');
+
+//blur
+var bltxt = document.getElementById('bl');
+var bl = document.getElementById('blur');
+
+//end
+var brrr = document.getElementById('borderR');
+
+// display none - block
+sClose.addEventListener('click', function()
+{if(settings.style.display=="block") {settings.style.display="none"} else {settings.style.display="block"}});
+	// for stage 2
+	STbtn.addEventListener('click', function(){
+	if(stagetc.style.display=="block") {stagetc.style.display="none"} else{stagetc.style.display="block"}
+
+});
+
+//stage 2 close
+STclose.addEventListener("click", function(){
+	if(stagetc.style.display=="none") {stagetc.stype.display="block"} else stagetc.style.display="none"
+});
+
+brrr.oninput = function(){
+	img.style.borderRadius = brrr.value+"%";
+}
+;
+// border width
+bW.oninput = function(){img.style.borderWidth = bW.value + "px";
+img.style.borderStyle = "solid";
+};
+
+// border color
+bColor.oninput = function(){img.style.borderColor = bColor.value}
+
+;
+bcV.oninput = function(){imbc.style.backgroundColor=bcV.value}
+// COLORS ONCLICK - border
+bblack.onclick = function(){
+	img.style.borderColor = "black"
+}
+
+
+bwhite.onclick = function(){
+	img.style.borderColor = "white"
+}
+
+
+bred.onclick = function(){
+	img.style.borderColor = "red"
+}
+
+
+bgreen.onclick = function(){
+	img.style.borderColor = "green"
+}
+
+
+byellow.onclick = function(){
+	img.style.borderColor = "yellow"
+}
+
+
+bpurple.onclick = function(){
+	img.style.borderColor = "purple"
+}
+
+
+bgray.onclick = function(){
+	img.style.borderColor = "gray"
+}
+
+bblack.onclick = function(){
+	img.style.borderColor = "pink"
+}
+;
+
+
+
+	brtxt.innerHTML= brt.value+"%";
+brt.oninput = function() {
+  brtxt.innerHTML = brt.value +"%";
+  img.style.filter = "brightness("+ brt.value+"%"+")" +  "grayscale("+gs.value+"%"+")" +
+"saturate(" +str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")"  + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+	  
+  }		
+
+txt.innerHTML= gs.value+"%";
+gs.oninput = function() {
+  txt.innerHTML = gs.value +"%";
+  img.style.filter = "grayscale("+ gs.value+"%"+")" + "brightness("+ brt.value+"%"+")" + "saturate("+str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")"  + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" +  "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+  }
+			
+
+  
+  strtxt.innerHTML= str.value+"%";
+str.oninput = function() {
+  strtxt.innerHTML = str.value +"%";
+  img.style.filter = "grayscale(" + gs.value+"%"+")" +
+"brightness("+ brt.value+"%"+")" + "saturate(" + str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")"  + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+	  
+  }
+  huetxt.innerHTML= hrt.value +"deg";
+hrt.oninput = function() {
+  huetxt.innerHTML = hrt.value +"deg";
+  img.style.filter = "grayscale(" + gs.value+"%"+")" +
+"brightness("+ brt.value+"%"+")" + "saturate(" + str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")"  + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+	  
+  }
+  invtxt.innerHTML= inv.value +"%";
+inv.oninput = function() {
+  invtxt.innerHTML = inv.value +"%";
+  img.style.filter = "grayscale(" + gs.value+"%"+")" +
+"brightness("+ brt.value+"%"+")" + "saturate(" + str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")" + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+	  
+  }
+  
+	contxt.innerHTML= con.value+"%";
+con.oninput = function() {
+  contxt.innerHTML = con.value +"%";
+  img.style.filter = "grayscale(" + gs.value+"%"+")" +
+"brightness("+ brt.value+"%"+")" + "saturate(" + str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")" + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" +  "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+	  
+  }
+
+  
+	sptxt.innerHTML= sp.value+"%";
+sp.oninput = function() {
+  sptxt.innerHTML = sp.value +"%";
+  img.style.filter = "grayscale(" + gs.value+"%"+")" +
+"brightness("+ brt.value+"%"+")" + "saturate(" + str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")" + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+	  
+  }
+  
+  	optxt.innerHTML= op.value+"%";
+op.oninput = function() {
+  optxt.innerHTML = op.value +"%";
+  img.style.filter = "grayscale(" + gs.value+"%"+")" +
+"brightness("+ brt.value+"%"+")" + "saturate(" + str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")" + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  ;
+  
+	  
+  }
+  bltxt.innerHTML= bl.value+"px";
+bl.oninput = function() {
+  bltxt.innerHTML = bl.value +"px";
+  img.style.filter = "grayscale(" + gs.value+"%"+")" +
+"brightness("+ brt.value+"%"+")" + "saturate(" + str.value+"%"+")" + "hue-rotate("+hrt.value+"deg"+")" + "invert(" + inv.value+"%"+")" + "contrast(" + con.value +"%"+")" + "sepia("+ sp.value+"%"+")" + "opacity(" + op.value+"%"+")" + "blur("+bl.value+"px"+")"
+  ;
+  
+	  
+  }
+  
+	  stng.addEventListener('click', rot);
+function rot(){
+if(img.style.transform=="rotate(-90deg)") {img.style.transform="rotate(0deg)"} else{img.style.transform="rotate(-90deg)"}
+}
+
+gov.onclick=function(){
+	
+	img.src = inpv.value;
+}
+chooseo.onclick = function(){
+	img.src="https://yt3.ggpht.com/a/AGF-l783rQkzJER5X6WT9XsAkOFNdHg3tHcGmzxpeA=s900-mo-c-c0xffffffff-rj-k-no"
+}
+
+choose[0].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/BIMCBJJXNJ.jpg";
+}
+
+choose[1].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/K8NTTCGBZU.jpg";
+}
+
+choose[2].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/83HHQUJKRT.jpg";
+}
+
+choose[3].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/QBGU3ISCKI.jpg";
+}
+
+
+choose[4].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/LTCIWAW9R2.jpg";
+}
+
+choose[5].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/D6Q4TWDY4V.jpg";
+}
+
+choose[6].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/0BJXEHZBXK.jpg";
+}
+
+choose[7].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/BO3XRRFRRQ.jpg";
+}
+
+choose[8].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/Q63RKSPEYT.jpg";
+}
+
+
+choose[9].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/693PZB7YZT.jpg";
+}
+
+choose[10].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/280h/8SM5T92EN3.jpg";
+}
+
+choose[11].onclick = function(){
+	img.src="https://cdn.stocksnap.io/img-thumbs/960w/Q0NU32178V.jpg";
+}
+
+
+choosel.onclick = function(){
+	img.src="https://www.sololearn.com/Icons/Avatars/12830593.jpg";
+}
+
+dn.addEventListener('click', function(){
+	pic.style.display="none";
+});
+
+//SETTINGS START 
+setbtn.addEventListener('click', function(){
+	if(settings.style.display=="block")
+
+	{settings.style.display="none"}
+
+else{settings.style.display="block"}
+});
+
+//width and height size
+sizebtn.addEventListener('click', function(){
+	if (sizec.style.display=="block"){sizec.style.display="none"} else{sizec.style.display="block"}
+});
+
+// background end
+mybcbtn.addEventListener("click", function(){
+	if(bcgc.style.display=="block") {bcgc.style.display="none"}
+else{bcgc.style.display="block"}
+});
+
+bRbtn.addEventListener('click', function(){
+	if(borderCon.style.display=="block") {borderCon.style.display="none"} else{borderCon.style.display="block"}
+});
+
+heightA.oninput = function(){
+	img.style.height = heightA.value + "%";
+}
+
+
+widthA.oninput = function(){
+	img.style.width = widthA.value + "%";
+}
+
+var hllp = document.getElementById('hl');
+hllp.addEventListener("click", function(){
+
+    cnt.style.height="0px";
+	cnt.style.width="0px";
+	cnt.style.transition = "all 0s";
+	cnt.style.padding="5px";
+	cnt.style.overflow="auto";
+	
+	setTimeout(()=> {
+		cnt.style.height="200%";
+		cnt.style.width="97%";
+		cnt.padding="5px";
+		cnt.style.transition = "all 1s"
+	},100);   
+	
+});
+
+
+ let cls = document.getElementById('closec');
+
+var hllp = document.getElementById('hl');
+
+
+cls.addEventListener("click",
+function(){cnt.style.height="0px";
+cnt.style.padding="0px";
+cnt.style.overflow="hidden";
+});
+
+}
+function upld(){
+   var inptt = document.getElementById('inputt');
+if(inptt.style.display=="block")
+{inptt.style.display="none"}else{inptt.style.display="block"}
+
+}
+</script>
+ </body>
+</html>
